@@ -1,7 +1,7 @@
 import os
 import numpy as np
 import pickle
-from tensorflow.keras.preprocessing import image
+from keras_preprocessing import image
 from tensorflow.keras.applications.resnet50 import ResNet50, preprocess_input
 from tensorflow.keras.layers import GlobalMaxPooling2D
 from tensorflow.keras.models import Sequential
@@ -48,3 +48,4 @@ pickle.dump(feature_list, open('embeddings.pkl', 'wb'))
 pickle.dump(filenames, open('filenames.pkl', 'wb'))
 
 print("✅ embeddings.pkl and filenames.pkl created successfully.")
+
