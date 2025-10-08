@@ -48,4 +48,3 @@ pickle.dump(feature_list, open('embeddings.pkl', 'wb'))
 pickle.dump(filenames, open('filenames.pkl', 'wb'))
 
 print("✅ embeddings.pkl and filenames.pkl created successfully.")
-
