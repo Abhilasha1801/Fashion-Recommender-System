@@ -22,3 +22,4 @@ How It Works
 Models Used
   CNN-based feature extractor (pretrained)
   OpenAI CLIP (image encoder)
+
