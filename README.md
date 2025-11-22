@@ -2,6 +2,7 @@
 A deep-learning–based fashion recommendation system that suggests visually similar clothing items using image embeddings.
 The system uses CNN feature extraction, vector similarity, and a Streamlit web interface for easy interaction.
 
+
 🚀 Features
 
 📸 Image-based similarity search
@@ -17,16 +18,8 @@ The system uses CNN feature extraction, vector similarity, and a Streamlit web i
 🛠️ Modular and easy-to-extend codebase
 
 
-▶️ How to Run
-Run the Streamlit App
-streamlit run app_streamlit.py
 
-Run the Main Application
-python app.py
 
-Re-generate Embeddings (Optional)
-python extract_features.py
-python extract_features_clip.py
 
 🖼️ How It Works
 
@@ -39,6 +32,8 @@ The model extracts the feature vector.
 Finds the closest embeddings using cosine similarity.
 
 Displays the top recommended similar items.
+
+
 
 📦 Models Used
 
