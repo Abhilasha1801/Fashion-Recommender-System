@@ -3,7 +3,7 @@ A deep-learning–based fashion recommendation system that suggests visually sim
 The system uses CNN feature extraction, vector similarity, and a Streamlit web interface for easy interaction.
 
 
-#Features
+# Features-
 
 📸 Image-based similarity search
 
@@ -21,7 +21,7 @@ The system uses CNN feature extraction, vector similarity, and a Streamlit web i
 
 
 
-#How It Works
+#vHow It Works-
 
 The system loads precomputed embeddings (pkl files).
 
