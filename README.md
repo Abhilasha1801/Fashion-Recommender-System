@@ -37,6 +37,6 @@ The system uses CNN feature extraction, vector similarity, and a Streamlit web i
 
 📦 Models Used
 
-CNN-based feature extractor (custom trained or pretrained)
+1) CNN-based feature extractor (pretrained ResNet50)
 
-OpenAI CLIP (image encoder)
+2) OpenCV
