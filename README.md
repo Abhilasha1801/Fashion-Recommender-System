@@ -6,10 +6,15 @@ The system uses CNN feature extraction, vector similarity, and a Streamlit web i
 # Features-
 
 📸 Image-based similarity search
+
 🧠 Feature extraction using Custom CNN
+
 ⚡ Fast retrieval using precomputed embeddings
+
 🎨 User interface implemented with Streamlit
+
 🗂️ Dataset of fashion images included
+
 🛠️ Modular and easy-to-extend codebase
 
 
@@ -18,11 +23,15 @@ The system uses CNN feature extraction, vector similarity, and a Streamlit web i
 
 # How It Works-
 
-The system loads precomputed embeddings (pkl files).
-User uploads a fashion image.
-The model extracts the feature vector.
-Finds the closest embeddings using cosine similarity.
-Displays the top recommended similar items.
+1) The system loads precomputed embeddings (pkl files).
+
+2) User uploads a fashion image.
+
+3) The model extracts the feature vector.
+
+4) Finds the closest embeddings using cosine similarity.
+
+5) Displays the top recommended similar items.
 
 
 
