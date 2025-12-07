@@ -35,7 +35,7 @@ The system uses CNN feature extraction, vector similarity, and a Streamlit web i
 
 
 
-📦 Models Used
+## Models Used
 
 1) CNN-based feature extractor (pretrained ResNet50)
 
