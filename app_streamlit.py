@@ -78,31 +78,65 @@ st.markdown("""
 
 
         [data-testid="stAppViewContainer"] {
+            background-image: url("https://img.freepik.com/free-photo/abstract-blur-shopping-mall_1203-8772.jpg?semt=ais_se_enriched&w=740&q=80");
+            background-size: cover;
+            background-position: center;
+            color: black;
+            background-attachment: fixed;
+        }
+        [data-testid="stAppViewContainer"]::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             background-image: url("https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1920&q=80");
             background-size: cover;
             background-position: center;
-            color: white;
+            filter: blur(5px);
+            z-index: -1;
         }
         [data-testid="stSidebar"] {
             background-color: rgba(255, 255, 255, 0.8);
             backdrop-filter: blur(10px);
         }
-        .stMarkdown, .stTextInput, .stButton, .stFileUploader {
-            background-color: rgba(255, 255, 255, 0.7);
-            color: #333;
+        .stMarkdown {
+            background-color: transparent;
+            color: black;
+        }
+        .stTextInput > label > div > p {
+            background-color: transparent !important;
+            color: black !important;
+            font-size: 2.5rem !important;
+            font-weight: 700 !important;
+        }
+        .stTextInput > label {
+            background-color: transparent !important;
+            color: black !important;
+            font-size: 3rem !important;
+            font-weight: 700 !important;
+        }
+        .stTextInput input {
+            font-size: 1rem !important;
+            padding: 15px !important;
+        }
+        .stTextInput, .stButton, .stFileUploader {
+            background-color: transparent;
+            color: black;
         }
 
         .title {
             font-size: 2.6rem;
             font-weight: 700;
             text-align: center;
-            color: #FF4081;
+            color: darkblue;
             font-family: 'Poppins', sans-serif;
             margin-bottom: 0.5rem;
         }
         .subtext {
             text-align: center;
-            color: #777;
+            color: black;
             margin-bottom: 2rem;
         }
         .image-card {
@@ -114,19 +148,19 @@ st.markdown("""
         }
         .tag {
             display: inline-block;
-            background-color: #f1f1f1;
+            background-color: transparent;
             border-radius: 12px;
             padding: 2px 10px;
             margin: 2px;
             font-size: 0.8rem;
-            color: #555;
+            color: white ;
         }
         .chip {
             display: inline-block;
             padding: 8px 16px;
             margin: 5px;
             border-radius: 20px;
-            background-color: #f0f0f0;
+            background-color: white;
             cursor: pointer;
             transition: 0.2s;
             font-weight: 500;
@@ -138,7 +172,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.markdown("<div class='title'>👗 Fashion Recommender AI</div>", unsafe_allow_html=True)
+st.markdown("<div class='title'>👗 Fashion Recommender AI 👗 </div>", unsafe_allow_html=True)
 st.markdown("<div class='subtext'>Find styles that match your mood, color, and category</div>", unsafe_allow_html=True)
 
 # ---------------------------
@@ -163,10 +197,10 @@ selected_category = st.sidebar.selectbox("", categories)
 page = st.sidebar.number_input("📦 Page", min_value=1, value=1)
 
 # Example queries
-st.sidebar.markdown("##### 💡 Example Queries")
-for example in ["Red dress", "Casual shoes", "Formal jacket", "Summer outfit"]:
-    if st.sidebar.button(example):
-        st.session_state["query"] = example
+#st.sidebar.markdown("##### 💡 Example Queries")
+#for example in ["Red dress", "Casual shoes", "Formal jacket", "Summer outfit"]:
+#    if st.sidebar.button(example):
+#        st.session_state["query"] = example
 
 # ---------------------------
 # MAIN AREA
